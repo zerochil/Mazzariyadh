@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "roboto";
+	src: url("assets/Roboto-Regular.ttf")
+}
+
+body {
+	background-image: url("assets/bgrnd.png");
+
+	width: 100%; 
+	height: 100%; 
+
+	background-position: center;
+	background-repeat: repeat-y;
+	background-size: cover;
+
+	color:white;
+	font-family:roboto;
+	max-width:1024px;
+	margin:0 auto;
+}
+
+.welcome span, .nav{ color: #FBC23B }
+.nav>a{
+	text-align:center;
+	padding-bottom:7px;
+	border-bottom: 1px solid #FBC23B;
+}
+
+.nav{ font-weight:200; }
+
+.header>div{ display:inline; }
+
+.welcome, .welcome img {height: 350px}
+.welcome img {position: absolute; filter: brightness(0.8);}
+.welcome h1 {font-size: 42px; text-align:right;padding-top:100px;}
+.welcome span {font-size: 64px;line-height:48px;text-align:right; display:block;}
+
+.about h1 {font-size:28px; font-weight:bold; margin:20px 0; color:#FBC23B;}
+.aboutus{ text-align: right; margin: auto 50px; }
+
+
+.platters{padding:32px 0; }
+.platters h1 {color:#FBC23B; text-align:center; font-size: 32px; margin-bottom:32px; }
+.platter {background:#1d1d1d; margin: 20px; padding: 30px; display:flex; 
+    align-items: center;
+justify-content: center;
+}
+.platter>div{flex:1;}
+.platter img{width:70%;margin:0 auto;}
