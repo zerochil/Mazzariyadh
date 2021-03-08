@@ -28,7 +28,7 @@ body {
 
 .nav{ font-weight:200; }
 
-.header img{ margin: 30px 100px 0 auto}
+.header img{ margin: 30px 0 0 auto; filter:brightness(.9)}
 .header>div{margin-left: auto; margin-right: 0;}
 
 .welcome, .welcome img {height: 350px}
@@ -40,11 +40,40 @@ body {
 .aboutus{ text-align: right; margin: auto 50px; }
 
 
-.platters{padding:32px 0; }
-.platters h1 {color:#FBC23B; text-align:center; font-size: 32px; margin-bottom:32px; }
-.platter {background:#1d1d1d; margin: 20px; padding: 30px; display:flex; 
-    align-items: center;
-justify-content: center;
+.platters{padding:32px 0; color:#ccc}
+.platters h1 {color:#FBC23B; text-align:center; margin-bottom:32px; }
+.platters>h1 {font-size: 42px;margin-bottom:48px}
+
+.platter h1 {font-size: 28px}
+.platter h1>span {font-size: 24px;display:block}
+.platter {background:#1d1d1d; margin: 40px; padding: 30px; display:flex; align-items: center; justify-content: center; }
+.platter img{width:70%;margin:0 auto;filter:brightness(.9)}
+
+.platter{box-shadow: 0 0 22px rgba(0,0,0,.7)}
+.platter>div{flex:1; letter-spacing: -1px;}
+.platter>div:nth-child(1)>div{text-align:center;}
+.platter>div:nth-child(1)>div:first-child{margin-bottom:30px;}
+.platter>div:nth-child(1)>div>div:first-child{padding: 0 0 12px }
+
+.platter>div:nth-child(1)>div>div:nth-child(2)>p:first-child{font-size:14px; color:#bbb}
+.platter>div:nth-child(1)>div>div:nth-child(2)>p:nth-child(2){color:#FBC23B;}
+
+.order { margin: 30px 0; text-align:center}
+.order a { border: 1px solid #FBC23B; font-size: 14px; letter-spacing:1px; padding: 15px 30px; color:#1d1d1d; background:#FBC23B; border-radius:30px; transition:all .3s;}
+.order a:hover { background: transparent; color:#FBC23B;}
+
+.platter>div:nth-child(3){text-align:right;}
+.platter>div:nth-child(3) h3{color:#FBC23B;}
+.platter>div:nth-child(3) p,
+.platter>div:nth-child(3) ul { list-style: none;margin-top:10px; direction: rtl}
+.platter>div:nth-child(3) ul li::before { content: "\2022";margin-left: -15px; color: #FBC23B; font-weight: bold; display: inline-block; width: 1em; font-size: 28px; line-height: 0; vertical-align: middle;}
+
+
+.payment{
+	text-align:center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image:url("assets/darkbgrnd.png");
+	height:200px
 }
-.platter>div{flex:1;}
-.platter img{width:70%;margin:0 auto;}
