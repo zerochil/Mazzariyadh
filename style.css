@@ -3,6 +3,15 @@
 	src: url("assets/Roboto-Regular.ttf")
 }
 
+.full-width {
+	/* width: 100vw; */
+	/* position: relative; */
+	/* left: 50%; */
+	/* right: 50%; */
+	/* margin-left: -50vw; */
+	/* margin-right: -50vw; */
+}
+
 body {
 	background-image: url("assets/bgrnd.png");
 
@@ -69,11 +78,35 @@ body {
 .platter>div:nth-child(3) ul li::before { content: "\2022";margin-left: -15px; color: #FBC23B; font-weight: bold; display: inline-block; width: 1em; font-size: 28px; line-height: 0; vertical-align: middle;}
 
 
-.payment{
+.payement{
 	text-align:center;
+	margin: 40px;
+	position:relative;
+	background:#333;
+	height: 450px;
+	overflow: hidden;
+}
+.payement>img{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image:url("assets/darkbgrnd.png");
-	height:200px
+	filter:brightness(.4);
+	opacity:.4
 }
+.payement>*:not(img){position:absolute; top:40px; left:80px; right:80px;}
+.payement h1{ color:#FBC23B; font-size: 32px; margin:20px 0; }
+
+.methods {display:flex;margin-bottom: 20px}
+.methods>div {flex:1; padding: 0 20px}
+.methods img {margin: 20px auto; height:48px;}
+
+.icons {display:flex; width:400px; margin:0 auto;}
+.icons>div {flex:1}
+.icons img {height:32px; margin: 20px auto;}
+
+.numbers{display:table;margin: 0 auto;}
+.numbers>div{display:inline-block; padding:50px}
+.numbers img{height: 48px;}
+
+
+.numbers div:nth-child(3) img { filter: contrast(0.8);}
